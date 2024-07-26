@@ -8,6 +8,11 @@ package ec.edu.espol.tiendaminorista;
  *
  * @author aleja
  */
-public class NotificacionCorreo {
-    
+public class NotificacionCorreo extends NotificacionHandler {
+    public void manejarNotificacion(String mensaje) {
+        // Lógica para enviar notificación por correo electrónico
+        if (siguiente != null) {
+            siguiente.manejarNotificacion(mensaje);
+        }
+    }
 }
