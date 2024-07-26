@@ -9,5 +9,13 @@ package ec.edu.espol.tiendaminorista;
  * @author aleja
  */
 public class PlataformaAtencionCliente {
-    
+    private CanalAtencion canalActual;
+
+    public void setCanalAtencion(CanalAtencion canal) {
+        this.canalActual = canal;
+    }
+
+    public void atender() {
+        canalActual.atenderCliente();
+    }
 }
