@@ -9,5 +9,5 @@ package ec.edu.espol.tiendaminorista;
  * @author aleja
  */
 public interface CanalAtencion {
-    
+    void atenderCliente();
 }
