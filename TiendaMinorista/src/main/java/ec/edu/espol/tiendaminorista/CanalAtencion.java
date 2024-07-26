@@ -8,6 +8,9 @@ package ec.edu.espol.tiendaminorista;
  *
  * @author aleja
  */
+
+// Implementación del Patrón Iterator
+
 public interface CanalAtencion {
     void atenderCliente();
 }
