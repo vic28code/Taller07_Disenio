@@ -8,6 +8,8 @@ package ec.edu.espol.tiendaminorista;
  *
  * @author aleja
  */
-public class CanalMovil {
-    
+public class CanalMovil implements CanalAtencion {
+    public void atenderCliente() {
+        // Lógica para atención al cliente vía móvil
+    }
 }
