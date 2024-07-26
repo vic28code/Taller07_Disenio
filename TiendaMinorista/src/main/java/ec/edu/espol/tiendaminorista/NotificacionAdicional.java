@@ -8,6 +8,11 @@ package ec.edu.espol.tiendaminorista;
  *
  * @author aleja
  */
-public class NotificacionAdicional {
-    
+public class NotificacionAdicional extends NotificacionHandler {
+    public void manejarNotificacion(String mensaje) {
+        // Lógica para enviar notificación por otros medios (WhatsApp, Signal, etc.)
+        if (siguiente != null) {
+            siguiente.manejarNotificacion(mensaje);
+        }
+    }
 }
