@@ -8,6 +8,11 @@ package ec.edu.espol.tiendaminorista;
  *
  * @author aleja
  */
-public class NotificacionSMS {
-    
+public class NotificacionSMS extends NotificacionHandler {
+    public void manejarNotificacion(String mensaje) {
+        // Lógica para enviar notificación por SMS
+        if (siguiente != null) {
+            siguiente.manejarNotificacion(mensaje);
+        }
+    }
 }
