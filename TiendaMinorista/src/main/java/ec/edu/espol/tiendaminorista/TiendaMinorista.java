@@ -4,6 +4,8 @@
 
 package ec.edu.espol.tiendaminorista;
 
+import java.util.Iterator;
+
 /**
  *
  * @author aleja
